@@ -1,0 +1,362 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #F9D3DE;
+}
+.container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-left: 0.5rem; */
+      /* padding-right: 0.5rem; */
+    }
+  
+  .body-part{
+    margin-top: 10px;
+  }
+
+header{
+width: 100%;
+display: inline-block;
+
+}
+.brandname-container{
+  width: auto;
+ display: inline-block;
+}
+.brand-name{
+  font-size: 30px;
+  font-family: Lato;
+  font-weight:bold;
+  
+}
+span{
+  color: #E5429B;
+}
+nav{
+  text-decoration: none;
+}
+
+.navbar-container{
+ display: inline-block;
+ position: sticky;
+ align-items: center;
+ margin-left: 340px;
+}
+
+nav .menu-bar{
+  display: none;
+  position:absolute;
+  top:0.75rem;
+  right: 0.8rem;
+  
+}
+
+nav .menu-bar span{
+  display: none;
+  color:#E5429B;
+  font-size: 25px;
+}
+.nav-links{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+ gap:33px;
+}
+.li {
+  list-style-type:none;
+  font-size: 23px;
+  font-family:Lato;
+ gap:35px;
+  
+}
+ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  font-family: Lato;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+a:active,a:hover, a:focus{
+  color: #E5429B;
+border-bottom: 3px solid #E5429B;
+border-bottom-style:solid;
+border-top-left-radius: 2px;
+ border-bottom-left-radius: 2px;
+ border-bottom-right-radius: 2px;
+ border-top-right-radius: 2px;
+ }
+.icon-container{
+  display: flex;
+ align-items: center;
+  position: absolute;
+  right: 100px;
+  top:20px;
+  gap: 20px;
+  }
+
+.search-icon , .person-icon 
+ {
+  font-size:25px;
+  }
+ 
+  .bag-icon{
+    font-size:25px;
+    position: relative;
+  }
+.pink-dot{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  }
+.body-part{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   position: relative;
+ 
+
+ }
+ .txt-part{
+  font-size: 65px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:140px;
+ }
+ .salon-img-pic{
+  width: 550px;
+  height: 550px;
+ 
+ }
+ .description{
+  position:absolute;
+  top:380px;
+ left:20px;
+ display: block;
+
+ }
+ .description-txt{
+  font-family: Lato;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+ 
+ }
+ .descrption-li{
+  line-height: 30px;
+  list-style-type:none;
+ }
+ 
+ .checkpt-icon{
+ width: 20px;
+  height: 20px;
+  border-radius: 10px;
+
+
+ }
+ .btn-container{
+  margin-top: 35px;
+  display: block;
+ }
+ .btn-left-container{
+  display: inline-block;
+  margin-right: 5px;
+ }
+ .btn-left{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color:#E5429B;
+  color:white;
+  border: none;
+  font-family: Lato;
+  font-size: 18px;
+
+
+ }
+ .btn-right-container{
+  display: inline-block;
+  margin-left: 5px;
+ }
+ .btn-right{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border-width: thin;
+  border-color: #E5429B;
+  font-family: Lato;
+  font-size: 18px;
+  color:#E5429B ;
+  
+ }
+ .descrption-li , .service-txt{
+  display:flex;
+  flex-direction: row;
+}
+ 
+ .descrption-li  p{
+ display: inline-block;
+  font-family: Lato; 
+  font-size: 18px;
+  font-weight: 580;
+ }
+ .checkpt-icon{
+display: inline-block;
+ }
+ ul .menu-bar{
+  display: none;
+ }
+ 
+
+
+
+ @media (max-width:780px) {
+  .container{
+      grid-template-columns:1fr;
+      position: relative;
+  }
+  .icon-container{
+    display:none;
+  }
+ 
+  .nav-links{
+    display: none;
+  }
+  nav .menu-bar{
+    display: flex;
+  }
+  nav{
+    flex-direction:column;
+  }
+  
+  nav ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: center;
+  }
+
+   nav ul li a{
+    margin:0.2rem 0.5rem;
+   }
+   .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+   }
+
+.navlink-container .menu-bar{
+    display: inline-block;
+    margin-top: -40px;
+  color:#E5429B;
+  position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 25px;
+  }
+  .txt-part{
+    font-size:30px;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    top:100px;
+    font-family: Lato;
+    text-align:start;
+   
+}
+  .img-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  object-position: center;
+    
+  }
+  .salon-img-pic{
+   display:block;
+   justify-content: center;
+   align-items: center;
+   width: 240px;
+   height: 240px;
+  align-content: center;
+}
+.checkpt-icon{
+  color: gray;
+
+}
+.description{
+    display: block;
+    width: 100%;
+    text-align: start;
+    margin-left: -30px;
+   
+  }
+  .description-li{
+    text-align-last: center;
+    justify-content: center;
+  }
+.description-txt{
+    display: block;
+    position:absolute;
+    top:0px;
+    justify-content: center;
+   width: 100%;
+   
+}
+ .descrption-li , .service-txt{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: justify;
+      }
+ .description-para{
+      display:flex;
+      flex-direction: row;
+      font-family: Lato; 
+      font-size: 15px;
+      font-weight: 580;
+      color: gray;
+      align-items: center;
+      margin-top: 5px;
+ }
+     .checkpt-icon{
+    display: inline-block;
+align-items: center;
+
+     }
+    .btn-container{
+      display: block;
+      flex-direction: column;
+      position:absolute;
+      top:140px;
+      gap: 30px;
+    }
+    .btn-right-container{
+   margin-top: 17px;
+    }
+    ul li .description .descrption-li .service-txt{
+      display: inline-block;
+    }
+    
+   
+}
+
+
+  
